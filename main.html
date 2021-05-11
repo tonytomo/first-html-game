@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="startGame()">
+    <h1>First html game</h1>
+    <!-- Game area -->
+    <script src="main.js"></script>
+    <!-- Button -->
+    <div class="controller">
+        <button onmousedown="moveUp()" onmouseup="clearMove()">UP</button>
+        <br>
+        <button onmousedown="moveLeft()" onmouseup="clearMove()">LEFT</button>
+        <button onmousedown="moveRight()" onmouseup="clearMove()">RIGHT</button>
+        <br>
+        <button onmousedown="moveDown()" onmouseup="clearMove()">DOWN</button>
+    </div>
+
+    <p>this is my first game</p>
+    <h3>Change log:</h3>
+    <ol>
+        <li>Added new canvas</li>
+        <li>Added new component</li>
+        <li>Added controller, increase velocity</li>
+        <li>Added obstacles and clear velocity on mouse up</li>
+        <li>Added moving obstacles, crashing object, and score</li>
+    </ol>
+</body>
+
+</html>
